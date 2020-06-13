@@ -6,10 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"features/01-Login.feature",},
+        features = {"features/CT001.feature",},
         glue = {"stepdefinition", "commons"},
-        tags = {"@login"},
-        dryRun = false,
+        tags = {"@CT001"},
         monochrome = true,
         plugin = {"report.ExtentCucumberFormatter:"})
 public class RunnerTest {
