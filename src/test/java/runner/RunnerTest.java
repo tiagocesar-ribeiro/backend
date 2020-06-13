@@ -6,9 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"features/CT001.feature",},
+        features = {"features/01-TC.feature",},
         glue = {"stepdefinition", "commons"},
-        tags = {"@CT001"},
+        tags = {"@CriarFuncionario,@VerificarFuncionario"},
+        dryRun = false,
         monochrome = true,
         plugin = {"report.ExtentCucumberFormatter:"})
 public class RunnerTest {

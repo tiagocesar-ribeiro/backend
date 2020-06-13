@@ -11,8 +11,8 @@ public class CriarUsuarioSteps {
     public CriarFuncionarioSteps login = new CriarFuncionarioSteps();
     private String LoginToken;
 
-    @Dado("^que informo os dados de login \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
-    public void que_informo_os_dados_de_login(String name, String salary, String age) throws Throwable {
+    @Dado("^que informo os dados do funcionario \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
+    public void que_informo_os_dados_do_funcionario(String name, String salary, String age) throws Throwable {
         login.setName(name);
         login.setSalary(salary);
         login.setAge(age);

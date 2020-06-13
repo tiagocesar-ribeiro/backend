@@ -83,7 +83,9 @@ public class APIMethods {
     //Validar o código de resposta
     @Então("^o código de resposta é (\\d+)$")
     public void o_código_de_resposta_é(int statusCode) throws Throwable {
+
         response.then().statusCode(statusCode).extract().response();
+
     }
 
 }
