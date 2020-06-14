@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"features/01-TC.feature",},
         glue = {"stepdefinition", "commons"},
-        tags = {"@CriarFuncionario,@VerificarFuncionario"},
+        tags = {"@CriarFuncionario"},
         dryRun = false,
         monochrome = true,
         plugin = {"report.ExtentCucumberFormatter:"})

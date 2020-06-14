@@ -4,11 +4,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class CriarFuncionarioSteps {
+public class CriarFuncionarioObj {
 
     public String name;
     public String salary;
-    public String age;
+	public String age;
 
 	public String getName() {
 		return name;
@@ -33,5 +33,9 @@ public class CriarFuncionarioSteps {
 	public void setAge(String age) {
 		this.age = age;
 	}
+
+
+
+
 }
 

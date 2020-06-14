@@ -48,6 +48,8 @@ public class APIMethods {
     public void getRequest(String environment, String endpoint) throws Throwable {
         response = request.when().get(properties.getProperty(environment) + properties.getProperty(endpoint));
         ExtentCucumberFormatter.insertInfoTextInStepReport("Endpoint:" + " " + properties.getProperty(environment) + properties.getProperty(endpoint));
+
+        System.out.println("o resultado é " + response);
     }
 
     //Realizar requisição POST
